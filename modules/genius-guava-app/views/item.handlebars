@@ -1,0 +1,26 @@
+<br>
+<a class="myBtn" id="backbtn" href= "/warehouses/{{item.WarehouseId}}"><button type="button"class="btn btn-outline-dark">Previous Page</button></a>
+<button type="button" class="btn btn-outline-dark" id="delete-btn" data-item="{{item.id}}" data-warehouse="{{item.WarehouseId}}">Delete Item</button>
+<br>
+<br>
+<h2>{{item.title}}</h2>
+<section>
+    <article class="item">
+            <img src="{{item.image}}" style="max-width: 300px; height= 300px" alt="Warehouse item"> 
+            <br />
+            <br>
+                  <div class="row justify-content-around "> 
+                   <div class="card mb-3 border-0 col-md-7 d-flex align-items-center shadow p-3 mb-5 bg-white rounded">
+                     <br>
+                     <h5 class="card-title">{{item.category}}</h5>
+                      <br> 
+                      <h5 class="card-title">Description:  {{item.description}}</h5>
+                      <br>
+                      <h5 class="card-title">Price: ${{item.price}}</h5>
+                    <div >
+                  </div>
+            </div>
+    </article>
+    
+</section>
+<script src="script.js"></script>
